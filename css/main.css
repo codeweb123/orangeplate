@@ -1,12 +1,18 @@
 .info{
-    background: #E27D60;
+    background: #241610;
 }
 
 body {
-    font-family: 'Arima Madurai', cursive;
+    font-family: 'Poiret One';
     color: #ffffff;
     background: url(../images/body1-bcg.jpg)center/cover
     fixed no-repeat;
+}
+.color {
+    color: black;
+}
+.color1 {
+    color: rgb(255, 177, 138)
 }
 
 .primary-color{
@@ -23,6 +29,11 @@ body {
     color: #85DCB;
 }
 
+.address {
+    text-align: right;
+    padding: 50px 0;
+}
+
 /*------------header-------------*/
 #header{
     min-height: calc(100vh - 94px);
@@ -32,14 +43,29 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+.orangetitle {
+    font-size: 100px;
+    color: rgb(244, 181, 135);
+    font-weight: 999;
+}
+.textspread {
+    letter-spacing: 20px;
+    font-weight: 999;
+}
 
 .height-90 {
     min-height: calc(100vh - 94px);
 }
 
 .banner h1{
-    border-top: 6px dotted rgb(255, 255, 255);
-    border-bottom: 6px dotted hsl(0, 0%, 100%);
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.banner h2{
     animation: fromLeft;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -79,8 +105,9 @@ body {
     animation-delay: 2s;
     opacity: 0;
     animation-fill-mode: forwards;
-
 }
+
+
 @keyframes fromRight{
     0% {
         transform: translateX(100px);
@@ -100,7 +127,7 @@ body {
     position: absolute;
     bottom: 5%;
     left: 50%;
-    background: #E27D60;
+    background: #ffffff;
     border-radius: 10px;
     transition: all 2s ease;
     animation: fromBottom;
@@ -109,7 +136,7 @@ body {
 }
 
 .header-link {
-    color: #242424;
+    color: #f4a892;
 }
 
 @keyframes fromBottom{
@@ -124,7 +151,7 @@ body {
     }
 }
 .navbar{
-    background: #E27D60;
+    background: #241610;
     padding: 20px 20px;
     transition: all 1s ease;
 }
@@ -155,12 +182,12 @@ body {
     transition: all 2s ease;
 }
 .nav-btn:hover{
-    color: #242424;
-    border: 2px solid #242424;
+    color: #ffffff;
+    border: 2px solid #ffffff;
     transform: rotate(10deg)
 }
 .toggler-btn{
-    border: 2px solid #d3325f;
+    border: 2px solid #41B3A3;
     padding: 5px;
     transition: all 2s ease;
 }
@@ -168,7 +195,7 @@ body {
     width: 30px;
     height: 3px;
     margin: 5px;
-    background: #d3325f;
+    background: ;
     transition: all 0.5s ease;
 }
 .change .bar1{
@@ -219,13 +246,14 @@ body {
     color: #242424;
 }
 .item-container:hover{
-    outline: 10px solid #d3325f;
+    outline: 10px solid #E27D60;
     outline-offset: -1.8rem;
 }
 /*------------------------------------menu------------------*/
 
 #menu{
     background-color: rgba(255,255,255,0.7);
+    font-family: Montserrat;
 }
 .special {
     border: 3px solid #E27D60;
@@ -236,7 +264,7 @@ body {
     top: 0;
     right: 10%;
     background: #E27D60;
-    padding: 0 0.4rem;
+    padding: 0 0.4rem; 
 }
 
 /*-------------------------------------about------------------------------*/
@@ -274,7 +302,7 @@ body {
     top:45%;
 }
 .about-image:hover{
-    outline:10px solid #d3325f;
+    outline:10px solid #41B3A3;
     outline-offset: 0.8rem;
     transform: scale(1.3) rotate(20deg);
     z-index: 30;
@@ -292,10 +320,13 @@ body {
 .review-img{
     width: 150px;
 }
+.review-text{
+    font-family: Montserrat;
+}
 /*-----------------------team-----------------*/
 
 .team-icons a{
-    color: #3b5998;
+    color: #41B3A3;
     transition: all 2s ease-in-out;
 }
 
@@ -309,21 +340,23 @@ body {
 .height-60{
     min-height: 60vh;
 }
+
 #contact .card{
-    background: rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.7);
     transition: all 2s ease; 
+    font-family: Montserrat;
 }
 #contact .card:hover{
     background: rgba(0,0,0,0.8);
 }
 
 #contact .card-header{
-    color: #d3325f;
+    color: #E27D60;
 }
 
 #contact .input-group-text{
-    background: #d3325f;
-    border-color: #d3325f;
+    background: #E27D60;
+    border-color: #E27D60;
     color: #242424;
 }
 #contact .card input{
@@ -333,15 +366,15 @@ body {
     color: #606060;
 }
 .contact-btn{
-    color:#d3325f;
-    border-color: #d3325f;
+    color:#E27D60;
+    border-color:#E27D60;
     background: transparent;
     transition: all 2s ease-in-out;
 }
 
 .contact-btn:hover{
     background: #c9c1ac;
-    color: #d3325f;
+    color: #E27D60;
     border-color: #c9c1ac;
 }
 
@@ -350,6 +383,7 @@ body {
     background: #c9c1ac;
     border-radius: 10px;
     display: inline-block;
+    font-family: Montserrat;
 }
 .scrollTop{
     position: fixed;
