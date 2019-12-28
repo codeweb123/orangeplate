@@ -28,7 +28,7 @@ $(document).ready(function(){
 //back to top
 $(window).scroll(function(){
   let position = $(this).scrollTop();
-  if(position>= 718){
+  if(position >= 718){
     $('#back-to-top').addClass('scrollTop');
   }
   else{
